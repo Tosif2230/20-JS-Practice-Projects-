@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Currency Converter</h1>
+      <div class="currency">
+        <select id="select-first">
+          <option value="USD" selected>USD</option>
+          <option value="INR">INR</option>
+          <option value="AUD">AUD</option>
+          <option value="GBP">GBP</option>
+          <option value="SAR">SAR</option>
+          <option value="PKR">PKR</option>
+          <option value="EUR">EUR</option>
+          <option value="JPY">JPY</option>
+        </select>
+        <input type="number" id="inp-first" min="1" />
+      </div>
+      <div class="currency">
+        <input id="inp-second" disabled />
+        <select id="select-second">
+          <option value="USD">USD</option>
+          <option value="INR" selected>INR</option>
+          <option value="AUD">AUD</option>
+          <option value="GBP">GBP</option>
+          <option value="SAR">SAR</option>
+          <option value="PKR">PKR</option>
+          <option value="EUR">EUR</option>
+          <option value="JPY">JPY</option>
+        </select>
+      </div>
+      <p class="refrance" id="refrance">1 USD = 81.3 INR</p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
