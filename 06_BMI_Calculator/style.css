@@ -5,10 +5,11 @@ body {
   align-items: center;
   background: linear-gradient(
     to left,
-    rgba(169, 241, 169, 0.61),
-    rgb(74, 74, 221)
+    rgb(173, 4, 240),
+    rgb(134, 94, 60)
   );
   min-height: 100vh;
+  font-family: "Courier New", Courier, monospace;
 }
 .container {
   background-color: rgba(255, 255, 255, 0.3);
@@ -16,28 +17,36 @@ body {
   display: flex;
   flex-direction: column;
   border-radius: 5px;
-  margin: 10px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+  margin: 5px;
 }
 .heading {
-  font-size: 20px;
-  font-family: "Courier New", Courier, monospace;
+  font-size: 30px;
 }
 .input {
-  margin: 10px;
-  padding: 10px;
+  padding: 10px 20px;
+  font-size: 18px;
   border-radius: 5px;
-  border: none;
-  width: 80%;
+  background: rgba(255, 255, 255, 0.4);
+  border-color: rgba(255, 255, 255, 0.5);
+  margin: 10px;
 }
 .btn {
-  background-color: rgba(49, 218, 49, 0.4);
-  margin: 10px;
-  padding: 10px;
-  border-radius: 5px;
+  background-color: rgba(109, 23, 207, 0.4);
+  font-size: 20px;
   border: none;
-  width: 80%;
+  margin: 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
 }
 .btn:hover {
-  cursor: pointer;
-  transition: all;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  transition: all 300ms ease;
+}
+
+.info-text {
+  font-size: 20px;
+  font-weight: 500;
 }
